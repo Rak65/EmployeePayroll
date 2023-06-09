@@ -33,3 +33,7 @@ UPDATE employee_payroll set Gender ='M' where Emp_Name = 'Rakesh'
 UPDATE employee_payroll set Gender ='F' where Emp_Name = 'Rashmi'
 UPDATE employee_payroll set Gender ='M' where Emp_Name = 'Anuj'
 select * from employee_payroll
+
+--UC7
+select sum(Salary),avg(Salary),MIN(Salary),MAX(Salary), Gender from employee_payroll where Gender = 'F' group by Gender;
+select sum(Salary),avg(Salary),MIN(Salary),MAX(Salary), Gender from employee_payroll where Gender = 'M' group by Gender;
