@@ -37,3 +37,15 @@ select * from employee_payroll
 --UC7
 select sum(Salary),avg(Salary),MIN(Salary),MAX(Salary), Gender from employee_payroll where Gender = 'F' group by Gender;
 select sum(Salary),avg(Salary),MIN(Salary),MAX(Salary), Gender from employee_payroll where Gender = 'M' group by Gender;
+select COUNT(*) from employee_payroll group by Gender
+
+--UC8
+alter table employee_payroll add Phone int(10) , Address Varchar(100), Department Varchar(100)
+alter table employee_payroll alter column Phone Bigint;
+
+update employee_payroll set Phone = 8340596362 , Address = 'Landon' , Department = 'Sports' where Emp_Name = 'Bill';
+update employee_payroll set Phone = 9765477457 , Address = 'India' , Department = 'Science' where Emp_Name = 'Ankit';
+update employee_payroll set Phone = 7870893100 , Address = 'California' , Department = 'Engineer' where Emp_Name = 'Charlie';
+update employee_payroll set Phone = 9547965004 , Address = 'New York' , Department = 'Tech' where Emp_Name = 'Rakesh';
+update employee_payroll set Phone = 7943868454 , Address = 'Delhi' , Department = 'Developer' where Emp_Name = 'Rashmi';
+update employee_payroll set Phone = 8749609934 , Address = 'Bangalore' , Department = 'Manager' where Emp_Name = 'Anuj';
