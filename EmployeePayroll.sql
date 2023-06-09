@@ -49,3 +49,13 @@ update employee_payroll set Phone = 7870893100 , Address = 'California' , Depart
 update employee_payroll set Phone = 9547965004 , Address = 'New York' , Department = 'Tech' where Emp_Name = 'Rakesh';
 update employee_payroll set Phone = 7943868454 , Address = 'Delhi' , Department = 'Developer' where Emp_Name = 'Rashmi';
 update employee_payroll set Phone = 8749609934 , Address = 'Bangalore' , Department = 'Manager' where Emp_Name = 'Anuj';
+
+--UC9
+alter table employee_payroll add Basic_Pay decimal(10,2) , Deduction decimal(10,2) , Taxable_Pay decimal(10,2) , Income_Tax decimal(10,2) , Net_Pay decimal(10,2);
+
+update employee_payroll set Basic_Pay = 25000 , Deduction = 0 , Taxable_Pay = 0 , Income_Tax = 0 , Net_Pay = 0 where Emp_Name = 'Bill';
+update employee_payroll set Basic_Pay = 35000 , Deduction = 0 , Taxable_Pay = 0 , Income_Tax = 0 , Net_Pay = 0 where Emp_Name = 'Ankit';
+update employee_payroll set Basic_Pay = 45000 , Deduction = 0 , Taxable_Pay = 0 , Income_Tax = 0 , Net_Pay = 0 where Emp_Name = 'Charlie';
+update employee_payroll set Basic_Pay = 55000 , Deduction = 0 , Taxable_Pay = 0 , Income_Tax = 0 , Net_Pay = 0 where Emp_Name = 'Rakesh';
+update employee_payroll set Basic_Pay = 65000 , Deduction = 0 , Taxable_Pay = 0 , Income_Tax = 0 , Net_Pay = 0 where Emp_Name = 'Rashmi';
+update employee_payroll set Basic_Pay = 75000 , Deduction = 0 , Taxable_Pay = 0 , Income_Tax = 0 , Net_Pay = 0 where Emp_Name = 'Anuj';
