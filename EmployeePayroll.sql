@@ -10,3 +10,5 @@ Create table employee_payroll
 	Salary decimal(10,2),
 	Starting_date Date
 );
+--UC3
+Insert into employee_payroll (Emp_Name , Salary , Starting_date) values ('Ankit' , 65000 , '2023-04-10');
