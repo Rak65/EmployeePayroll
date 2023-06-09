@@ -59,3 +59,8 @@ update employee_payroll set Basic_Pay = 45000 , Deduction = 0 , Taxable_Pay = 0 
 update employee_payroll set Basic_Pay = 55000 , Deduction = 0 , Taxable_Pay = 0 , Income_Tax = 0 , Net_Pay = 0 where Emp_Name = 'Rakesh';
 update employee_payroll set Basic_Pay = 65000 , Deduction = 0 , Taxable_Pay = 0 , Income_Tax = 0 , Net_Pay = 0 where Emp_Name = 'Rashmi';
 update employee_payroll set Basic_Pay = 75000 , Deduction = 0 , Taxable_Pay = 0 , Income_Tax = 0 , Net_Pay = 0 where Emp_Name = 'Anuj';
+
+--UC10
+Insert into employee_payroll (Emp_Name , Salary , Starting_date , Gender , Phone , Address , Department , Basic_Pay , Deduction , Taxable_Pay , Income_Tax , Net_Pay) values ('Terissa' , 56000 , '2019-03-10' , 'F' , 7887897985 , 'Peris' , 'Sales' , 25000 , 0 , 0 , 0 , 0);
+Insert into employee_payroll (Emp_Name , Salary , Starting_date , Gender , Phone , Address , Department , Basic_Pay , Deduction , Taxable_Pay , Income_Tax , Net_Pay) values ('Terissa' , 78000 , '2019-03-10' , 'F' , 6769898434 , 'Peris' , 'Marketing' , 25000 , 0 , 0 , 0 , 0);
+select * from employee_payroll
