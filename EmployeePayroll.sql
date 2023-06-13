@@ -78,6 +78,13 @@ Insert into Emp_Daprtment(Emp_ID, Dept_Name) values (2, 'Physics');
 Insert into Emp_Daprtment(Emp_ID, Dept_Name) values (2, 'Computer');
 Insert into Emp_Daprtment(Emp_ID, Dept_Name) values (2, 'Account');
 Insert into Emp_Daprtment(Emp_ID, Dept_Name) values (2, 'Management');
+
+--UC12
 select * from Emp_Daprtment
 select * from employee_payroll
 
+SELECT Salary FROM employee_payroll WHERE Emp_Name = 'Bill' and Starting_date between CAST('2018-01-01' AS DATE) AND GETDATE();
+
+select sum(Salary),avg(Salary),MIN(Salary),MAX(Salary), Gender from employee_payroll inner join Emp_Daprtment on employee_payroll.Emp_ID=Emp_Daprtment.Department_Id group by Gender;
+select sum(Salary),avg(Salary),MIN(Salary),MAX(Salary), Gender from employee_payroll where Gender = 'M' group by Gender;
+select COUNT(*) from employee_payroll group by Gender
