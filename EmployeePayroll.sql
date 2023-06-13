@@ -64,3 +64,20 @@ update employee_payroll set Basic_Pay = 75000 , Deduction = 0 , Taxable_Pay = 0 
 Insert into employee_payroll (Emp_Name , Salary , Starting_date , Gender , Phone , Address , Department , Basic_Pay , Deduction , Taxable_Pay , Income_Tax , Net_Pay) values ('Terissa' , 56000 , '2019-03-10' , 'F' , 7887897985 , 'Peris' , 'Sales' , 25000 , 0 , 0 , 0 , 0);
 Insert into employee_payroll (Emp_Name , Salary , Starting_date , Gender , Phone , Address , Department , Basic_Pay , Deduction , Taxable_Pay , Income_Tax , Net_Pay) values ('Terissa' , 78000 , '2019-03-10' , 'F' , 6769898434 , 'Peris' , 'Marketing' , 25000 , 0 , 0 , 0 , 0);
 select * from employee_payroll
+
+--UC11
+
+create table Emp_Daprtment(
+Department_Id int primary key identity(1,1),
+Emp_ID int foreign key references employee_payroll(Emp_ID),
+Dept_Name varchar(100)
+)
+select * from Emp_Daprtment
+Insert into Emp_Daprtment(Emp_ID, Dept_Name) values (2, 'Science');
+Insert into Emp_Daprtment(Emp_ID, Dept_Name) values (2, 'Physics');
+Insert into Emp_Daprtment(Emp_ID, Dept_Name) values (2, 'Computer');
+Insert into Emp_Daprtment(Emp_ID, Dept_Name) values (2, 'Account');
+Insert into Emp_Daprtment(Emp_ID, Dept_Name) values (2, 'Management');
+select * from Emp_Daprtment
+select * from employee_payroll
+
